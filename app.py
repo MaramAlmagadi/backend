@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 def generate_attendance_json():
     # Fetch CSV from Google Drive
-csv_url = "https://drive.google.com/uc?export=download&id=1lHpFWrloby5BMN3BChYnKdhpIFodMVNO"
-df = pd.read_csv(csv_url)
+   csv_url = "https://drive.google.com/uc?export=download&id=1lHpFWrloby5BMN3BChYnKdhpIFodMVNO"
+   df = pd.read_csv(csv_url)
 
     # Clean column names
     df.columns = df.columns.str.strip()
